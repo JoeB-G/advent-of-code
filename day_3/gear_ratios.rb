@@ -21,6 +21,7 @@ def gear_ratios_p1
       symbol_locations << [row, column] if char.match?(/[^[0-9]^.]/)
     end
   end
+  pp symbol_locations
   symbol_locations.each do |sym_loc|
     number_locations.each do |locations, number|
       locations.each do |num_loc|
